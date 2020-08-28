@@ -11,6 +11,10 @@ class PigLatinizer
     latinized_word
   end
 
+  def piglatinize(sentence)
+    self.to_pig_latin(sentence)
+  end
+
   def to_pig_latin(sentence)
     words_in_sentence = sentence.split(" ")
 
