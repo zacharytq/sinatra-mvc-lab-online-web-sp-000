@@ -9,5 +9,6 @@ class App < Sinatra::Base
   post '/piglatinize' do
     @sentence = params[:user_input]
     puts params
+    puts @sentence[user_phrase]
   end
 end
