@@ -8,6 +8,6 @@ class App < Sinatra::Base
 
   post '/piglatinize' do
     @sentence = params[:user_input]
-    puts @sentence
+    puts params
   end
 end
