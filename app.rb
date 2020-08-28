@@ -9,6 +9,6 @@ class App < Sinatra::Base
   post '/piglatinize' do
     @sentence = params[:user_input]
     puts params
-    erb pig_latin
+    erb :pig_latin
   end
 end
